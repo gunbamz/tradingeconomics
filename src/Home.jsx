@@ -46,7 +46,7 @@ export default function Home() {
             >
              Load data
             </button>
-            {err && <span>no such indicator</span>}
+            {err && <span>Network err or no such indicator, pls retry.</span>}
           </div>
           <div id="chart">
             {isSending ? <p>loading</p> : data ?  <BarChart loader={handleClick} data={data} /> : 
